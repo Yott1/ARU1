@@ -96,7 +96,7 @@ box-sizing: border-box;
 }
 
 body{
-	background-color:#5f5974;
+	background-color:black;
 }
 
 .header{
@@ -246,7 +246,7 @@ h1 span{
 	text-align: center;
 }
 
-/* ========================= */
+/* ==================== */
 
 .main-internat .image{
 	background-image: url("img/Internat-menu.jpg");
@@ -376,6 +376,8 @@ footer h3 {
 
 
 
+
+
 @media screen and (max-width: 1150px) {
 
 	/* ===============  header ================ */
@@ -424,5 +426,6 @@ footer h3 {
 		background-position: 0px -200px;
 		
 	}
+
 
 }
