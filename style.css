@@ -1,0 +1,428 @@
+/* organisation css:{
+
+position de la boite/du modele (largeur, hauteur positionnement etc...)
+
+Les bordures...
+
+barckground...
+
+text (font size...)
+
+autre (animation, transformatioons...)
+
+}
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* ==========================================================  FONTS ========= */
+
+h1, h2{
+	font-family: 'Montserrat', sans-serif;
+}
+
+h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	font-family: 'PT Sans', sans-serif;
+}
+
+
+/* =======================================================   VARIABLES  =========*/
+
+:root{
+	--clic: rgb(255, 0, 21);
+}
+
+/* ========================================================  PAGE D'ACCEUIL ======= */
+
+
+
+/* ===========================================================  header ============  */
+
+html{
+box-sizing: border-box;
+}
+
+body{
+	background-color:#5f5974;
+}
+
+.header{
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+justify-content: space-between;
+margin: 0 3.75%;
+
+}
+
+h1 span{
+	font-size: 55px ;
+}
+
+.logo-image{
+	display: block;
+	width: 196px;
+	height:200px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	background-image: url("img/LOGO-blanc.png");
+
+	cursor: pointer;
+}
+
+.nav-h1 {
+	color: rgb(255,255,255);
+}
+
+.nav{
+	display: flex;
+	align-items:center;
+	justify-content: space-around;
+	height: 2em;
+	width: calc(95% - 192px);
+
+	border-radius: 5px;
+	
+	background-color:#6f668f;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+
+	font-size: 50px;
+}
+
+
+/* ==========================================================   main  ======  */
+
+
+.main{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin: 0 3.75%;
+
+	border-radius: 5px;
+}
+
+
+.main h3 {
+	padding: 25px 10px 18.5px;
+
+	font-size: 30px;
+
+	transition: ease 0.3s 0s;
+}
+
+.main a {
+	background: linear-gradient(to top, #c7d5f0 0%,  #c7d5f0 5%, transparent 5.01%);
+	background-size: 0% 100%;
+	background-repeat: no-repeat;
+	
+	font-size: 27px;
+	color: #b7ccf5;
+	font-weight: 600;
+	
+	transition: background-size ease 0.3s;
+	
+	}
+
+
+.main a:hover{
+	background-size: 100% 100%;
+}
+
+.main > div {
+	width: 27.5%;
+	height: auto;
+
+}
+
+/* ================== */
+
+.main-fondamental .image{
+	background-image: url(img/Fondamental-menu.jpg);
+	background-position: 0 -70px;
+	background-size: 100%;
+	height: 300px;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 11.5px;
+
+	border-radius: 5px;
+
+	background-repeat: repeat-x;
+	background-size: cover;
+
+	transition: 0.3s ease 0s;
+
+	cursor: pointer;
+}
+
+.main-fondamental .image:hover{
+	transform: scale(1.09, 1.09);
+}
+
+.main-fondamental h3 {
+	text-align: center;
+}
+
+/* ====================== */
+
+.main-secondaire .image{
+	background-image: url("img/Secondaire-menu.jpg");
+	background-position: 0 -70px;
+	background-size: 100%;
+	height: 300px;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 11.5px;
+
+	border-radius: 5px;
+
+	background-repeat: repeat-x;
+	background-size: cover;
+
+	transition: 0.3s ease 0s;
+
+	cursor: pointer;
+}
+.main-secondaire .image:hover{
+	transform: scale(1.09, 1.09);
+}
+
+.main-secondaire h3 {
+	text-align: center;
+}
+
+/* ========================= */
+
+.main-internat .image{
+	background-image: url("img/Internat-menu.jpg");
+	background-position: 0 -70px;
+	background-size: 100%;
+	height: 300px;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 11.5px;
+
+	border-radius: 5px;
+
+	background-repeat: repeat-x;
+	background-size: cover;
+
+	transition: 0.3s ease 0s;
+
+	cursor: pointer;
+}
+.main-internat .image:hover{
+	transform: scale(1.09, 1.09);
+}
+
+.main-internat h3 {
+	text-align: center;
+}
+
+
+/* ================================================================   footer  ===================  */
+
+/* dégradé
+	background: linear-gradient(90deg, rgb(62, 62, 122) 0%, rgba(76, 148, 142, 0.45) 50%, rgba(2,0,36,1) 100%);*/
+
+.footer{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 40px 3.75%;
+	
+    border-radius: 5px;
+
+	background-color: #C8CBEA;
+}
+
+footer div {
+	width: 33%;
+}
+
+footer h3 {
+	padding: 40px 0px 25px;
+
+	font-size: 27.5px;
+	
+}
+
+.footer p {
+	font-size: 18.5px;
+	line-height: 1.3em;
+	
+}
+
+.footer-fondamentale {
+	margin-left: 4.5%;
+}
+
+.footer-internat {
+	margin-right: 4.5%;
+}
+
+.footer-fondamentale :nth-child(2) {
+	margin: 0px 0px 20px;
+}
+
+.footer-fondamentale :nth-child(3) {
+	margin: 0 0px 25px;
+}
+
+.footer-secondaire :first-child {
+	text-align: center;
+}
+
+.footer-secondaire :nth-child(2) {
+	margin: 0 0px 20px;
+	text-align: center;
+}
+
+.footer-secondaire :nth-child(3) {
+	margin: 0 0px 40px;
+	text-align: center;
+}
+
+
+.footer-internat :first-child {
+	text-align: right;
+}
+
+.footer-internat :nth-child(2) {
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+.footer-internat :nth-child(3) {
+	margin: 0 0px 25px;
+	text-align: right;
+}
+
+.footer-secondaire a {
+	background: linear-gradient(to top, rgba(255, 0, 0, 1) 0%,  rgba(255, 0, 0, 1) 5%, transparent 5.01%);
+	background-size: 0% 100%;
+	background-repeat: no-repeat;
+
+	font-size: 19.5px;
+	color: var(--clic);
+
+	transition: background-size ease 0.3s;
+
+}
+
+
+.footer-secondaire a:hover{
+
+	background-size: 100% 100%;
+	
+}
+
+/* =========================================  Téléphone  ========================  */
+
+
+
+@media screen and (max-width: 1150px) {
+
+	/* ===============  header ================ */
+	
+	.header{
+		flex-flow: column ;
+		justify-content: center;
+	}	
+	
+	.nav {
+		width: 100%;
+	}
+
+    .nav-h1 {
+		font-size:30px;
+	}
+
+	.nav-h1 span {
+		font-size: 30px;
+	}
+
+	/* ===================  main ================*/
+	
+    .main {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.main > div {
+		width: 65%;
+		background-position: 0px 200px;
+	}
+
+
+    .main-fondamental .image {
+		background-position: 0px -175px;
+		
+	}
+
+	.main-secondaire .image {
+		background-position: 0px -120px;
+		
+	}
+
+	.main-internat .image {
+		background-position: 0px -200px;
+		
+	}
+
+}
