@@ -82,7 +82,7 @@ a {
 /* =======================================================   VARIABLES  =========*/
 
 :root{
-	--clic: rgb(255, 0, 21);
+	--clic: rgb(245, 35, 52);
 }
 
 /* ========================================================  PAGE D'ACCEUIL ======= */
@@ -96,7 +96,7 @@ box-sizing: border-box;
 }
 
 body{
-	background-color:#5f5974;
+	background-color:#2B4D71;
 }
 
 .header{
@@ -137,8 +137,8 @@ h1 span{
 
 	border-radius: 5px;
 	
-	background-color:#6f668f;
-	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+	background-color:#4E80B1;
+	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.10);
 
 	font-size: 50px;
 	text-transform: uppercase;
@@ -172,7 +172,7 @@ h1 span{
 	background-repeat: no-repeat;
 	
 	font-size: 27px;
-	color: #b7ccf5;
+	color: rgb(255, 255, 255);
 	font-weight: 600;
 	
 	transition: background-size ease 0.3s;
@@ -198,7 +198,7 @@ h1 span{
 	background-size: 100%;
 	height: 300px;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	margin-top: 11.5px;
 
 	border-radius: 5px;
@@ -227,7 +227,7 @@ h1 span{
 	background-size: 100%;
 	height: 300px;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom:0px;
 	margin-top: 11.5px;
 
 	border-radius: 5px;
@@ -255,7 +255,7 @@ h1 span{
 	background-size: 100%;
 	height: 300px;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	margin-top: 11.5px;
 
 	border-radius: 5px;
@@ -289,7 +289,10 @@ h1 span{
 	
     border-radius: 5px;
 
-	background-color: #C8CBEA;
+	background-color: #486A8E;
+	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+
+	color: rgb(204, 204, 204);
 }
 
 footer div {
@@ -300,7 +303,6 @@ footer h3 {
 	padding: 40px 0px 25px;
 
 	font-size: 27.5px;
-	
 }
 
 .footer p {
@@ -355,7 +357,7 @@ footer h3 {
 }
 
 .footer-secondaire a {
-	background: linear-gradient(to top, rgba(255, 0, 0, 1) 0%,  rgba(255, 0, 0, 1) 5%, transparent 5.01%);
+	background: linear-gradient(to top, rgba(245, 35, 52, 1) 0%,  rgba(245, 35, 52, 1) 5%, transparent 5.01%);
 	background-size: 0% 100%;
 	background-repeat: no-repeat;
 
@@ -366,15 +368,16 @@ footer h3 {
 
 }
 
-
 .footer-secondaire a:hover{
 
 	background-size: 100% 100%;
 	
 }
 
-/* =========================================  Téléphone  ========================  */
 
+
+
+/* =========================================  Téléphone  ========================  */
 
 
 
@@ -405,7 +408,7 @@ footer h3 {
 	/* ===================  main ================*/
 	
     .main {
-		flex-flow: column-reverse nowrap;
+		flex-flow: column nowrap;
 		align-items: center;
 	}
 
@@ -432,11 +435,3 @@ footer h3 {
 
 
 }
-
-
-
-
-
-
-
-
