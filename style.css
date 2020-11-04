@@ -96,7 +96,7 @@ box-sizing: border-box;
 }
 
 body{
-	background-color:#2B4D71;
+	background-color:#294d72;
 }
 
 .header{
@@ -125,19 +125,20 @@ h1 span{
 }
 
 .nav-h1 {
-	color: rgb(255,255,255);
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
 }
 
 .nav{
 	display: flex;
-	align-items:center;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
 	height: 2em;
 	width: calc(95% - 192px);
 
 	border-radius: 5px;
 	
-	background-color:#4E80B1;
+	background-color:#487caf;
 	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.10);
 
 	font-size: 50px;
@@ -167,17 +168,16 @@ h1 span{
 }
 
 .main a {
-	background: linear-gradient(to top, #c7d5f0 0%,  #c7d5f0 5%, transparent 5.01%);
+	background: linear-gradient(to top, #ffffff 0%,  #ffffff 5%, transparent 5.01%);
 	background-size: 0% 100%;
 	background-repeat: no-repeat;
 	
-	font-size: 27px;
-	color: rgb(255, 255, 255);
+	font-size: 27.5px;
+	color: #ffffff;
 	font-weight: 600;
 	
 	transition: background-size ease 0.3s;
-	
-	}
+}
 
 
 .main a:hover{
@@ -285,14 +285,13 @@ h1 span{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+	align-content: center;
 	margin: 40px 3.75%;
 	
     border-radius: 5px;
 
 	background-color: #486A8E;
 	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
-
-	color: rgb(204, 204, 204);
 }
 
 footer div {
@@ -303,12 +302,15 @@ footer h3 {
 	padding: 40px 0px 25px;
 
 	font-size: 27.5px;
+	color: rgb(212, 213, 255);
 }
 
 .footer p {
-	font-size: 18.5px;
-	line-height: 1.3em;
-	
+	font-size: 16.5px;
+	font-weight: 300;
+	line-height: 1.4em;
+	color: rgb(255, 255, 255);
+	font-family: 'Roboto Slab', serif;
 }
 
 .footer-fondamentale {
@@ -324,7 +326,7 @@ footer h3 {
 }
 
 .footer-fondamentale :nth-child(3) {
-	margin: 0 0px 25px;
+	margin: 0 0px 0px;
 }
 
 .footer-secondaire :first-child {
@@ -332,12 +334,12 @@ footer h3 {
 }
 
 .footer-secondaire :nth-child(2) {
-	margin: 0 0px 20px;
+	margin: 0 0px 15px;
 	text-align: center;
 }
 
 .footer-secondaire :nth-child(3) {
-	margin: 0 0px 40px;
+	margin: 0 0px 30px;
 	text-align: center;
 }
 
@@ -352,7 +354,7 @@ footer h3 {
 }
 
 .footer-internat :nth-child(3) {
-	margin: 0 0px 25px;
+	margin: 0 0px 20px;
 	text-align: right;
 }
 
