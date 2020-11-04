@@ -441,11 +441,11 @@ footer h3 {
 		text-align: center;
 	}
 
-	.footer-fondamentale, {
+	.footer-fondamentale {
 		margin: 0;
 	}
 
-	.footer-internat{
+	.footer-internat {
 		margin: 0 0 20px;
 	}
 
@@ -456,7 +456,7 @@ footer h3 {
 	
 
 
-    .display-none::after{
+    .display-none::after {
 		content: "";
 		position: absolute;
 		top: 100%;
