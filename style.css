@@ -441,6 +441,10 @@ footer h3 {
 		text-align: center;
 	}
 
+	.display-none a {
+		font-weight: 400;
+	}
+
 	.footer-fondamentale {
 		margin: 0;
 	}
