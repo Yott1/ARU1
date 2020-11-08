@@ -1,363 +1,208 @@
 /* organisation css:{
 
-position de la boite/du modele (largeur, hauteur positionnement etc...)
+	POSITION + MARGIN, PADDING
 
-Les bordures...
+	BORDERS
 
-barckground...
+	BACKGROUND
 
-text (font size...)
+	TEXT
 
-autre (animation, transformatioons...)
+	AUTRES
 
-}
-
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-a {
-	text-decoration: none;
-}
+} */
 
 
-/* ==========================================================  FONTS ========= */
-
-h1, h2{
-	font-family: 'Montserrat', sans-serif;
-}
-
-h3, h4, h5, h6{
-	font-family: 'Open Sans', sans-serif;
-}
-
-a {
-	font-family: 'PT Sans', sans-serif;
-}
+/* ======================================  PAGE D'ACCEUIL ========================= */
 
 
-/* =======================================================   VARIABLES  =========*/
-
-:root{
-	--clic: rgb(245, 35, 52);
-}
-
-/* ========================================================  PAGE D'ACCEUIL ======= */
-
-
-
-/* ===========================================================  header ============  */
+/* ====================================== header ================================= */
 
 html{
-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
+
 body{
-	background-color:#235283; 
+	background-color:#016573;
+	width: 100%;
+	height: 100vh;
+}
+
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row nowrap;
 }
 
 .header{
-display: flex;
-flex-flow: row nowrap;
-align-items: center;
-justify-content: space-between;
-margin: 0 3.75%;
-
-}
-
-h1 span{
-	font-size: 55px ;	
+	justify-content: space-between;
+	margin: 0 3.75%;
 }
 
 .logo-image{
 	display: block;
-	width: 196px;
+	width: 196.5px;
 	height:200px;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 40px 0;
 
 	background-image: url("img/LOGO-blanc.png");
 
 	cursor: pointer;
 }
 
-.nav-h1 {
-	color: rgb(255, 255, 255);
-	text-transform: uppercase;
-}
 
-.nav{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.navbar{
 	height: 2em;
-	width: calc(95% - 192px);
+	width: calc(95% - 196.5px);
 
 	border-radius: 5px;
 	
-	background-color:#3f81c4;
-	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+	background-color:#fefff6;
 
 	font-size: 50px;
+	font-weight: 400;
+	text-transform: uppercase;
+	
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.navbar-h1 {
+	color: rgb(0, 0, 0);
 	text-transform: uppercase;
 }
 
+.nav-bar-h1 span{
+	font-size: 55px ;	
+}
 
-/* ==========================================================   main  ======  */
+
+ /* ============================================   main  ======================== */ 
 
 
 .main{
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	margin: 0 3.75%;
+	justify-content: space-between;
+	height: 55%;
+	width: 100%;
 
-	border-radius: 5px;
-}
-
-
-.main h3 {
-	padding: 25px 10px 18.5px;
-
-	font-size: 30px;
-
-	transition: ease 0.3s 0s;
-}
-
-.main a {
-	background: linear-gradient(to top, #ffffff 0%,  #ffffff 5%, transparent 5.01%);
-	background-size: 0% 100%;
+	background-image: url(img/595349517_2000px-600px.png);
+	background-position: center center;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
-	
+	background-size: cover ;
+}
+
+.petite-ecole,.ecole-secondaire,.ecole-internat{
+	width:100%;
+}
+
+.main .btn {
+	padding: 11px 25px;
+
+	border-radius: 50px;
+
+	background-color:rgba(212, 59, 87, 1);
+
 	font-size: 27.5px;
-	color: #ffffff;
-	font-weight: 600;
+	color: white;
+	font-weight: 400;
+	text-align: center;
+	font-family: 'Yantramanav', sans-serif;
 	
-	transition: background-size ease 0.3s;
+    transition: all 0.3s ease 0s;
+	cursor:pointer;
+	box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.main a:hover {
+	transform: scale(1.2, 1.2);
+	box-shadow: none; 
 }
 
 
-.main a:hover{
-	background-size: 100% 100%;
-}
-
-.main > div {
-	width: 27.5%;
-	height: auto;
-
-}
+ /* ======== TELEPHONE DESACTIVE ============== */ 
 
 .display-none {
 	display: none;
 }
 
-/* ================== */
 
-.main-fondamental .image{
-	background-image: url(img/Fondamental-menu.jpg);
-	background-position: 0 -70px;
-	background-size: 100%;
-	height: 300px;
-	width: 100%;
-	margin-bottom: 0px;
-	margin-top: 11.5px;
+/* ====================================   footer  ================================ */ 
 
-	border-radius: 5px;
+/* Dégradé:
 
-	background-repeat: repeat-x;
-	background-size: cover;
-
-	transition: 0.3s ease 0s;
-
-	cursor: pointer;
-}
-
-.main-fondamental .image:hover{
-	transform: scale(1.09, 1.09);
-}
-
-.main-fondamental h3 {
-	text-align: center;
-}
-
-/* ====================== */
-
-.main-secondaire .image{
-	background-image: url("img/Secondaire-menu.jpg");
-	background-position: 0 -70px;
-	background-size: 100%;
-	height: 300px;
-	width: 100%;
-	margin-bottom:0px;
-	margin-top: 11.5px;
-
-	border-radius: 5px;
-
-	background-repeat: repeat-x;
-	background-size: cover;
-
-	transition: 0.3s ease 0s;
-
-	cursor: pointer;
-}
-.main-secondaire .image:hover{
-	transform: scale(1.09, 1.09);
-}
-
-.main-secondaire h3 {
-	text-align: center;
-}
-
-/* ==================== */
-
-.main-internat .image{
-	background-image: url("img/Internat-menu.jpg");
-	background-position: 0 -70px;
-	background-size: 100%;
-	height: 300px;
-	width: 100%;
-	margin-bottom: 0px;
-	margin-top: 11.5px;
-
-	border-radius: 5px;
-
-	background-repeat: repeat-x;
-	background-size: cover;
-
-	transition: 0.3s ease 0s;
-
-	cursor: pointer;
-}
-.main-internat .image:hover{
-	transform: scale(1.09, 1.09);
-}
-
-.main-internat h3 {
-	text-align: center;
-}
+	background: linear-gradient(90deg, rgb(62, 62, 122) 0%,
+	rgba(76, 148, 142, 0.45) 50%, 
+	rgba(2,0,36,1) 100%);
+	*/
 
 
-/* ================================================================   footer  ===================  */
-
-/* dégradé
-	background: linear-gradient(90deg, rgb(62, 62, 122) 0%, rgba(76, 148, 142, 0.45) 50%, rgba(2,0,36,1) 100%);*/
 
 .footer{
 	display: flex;
-	flex-flow: row nowrap;
 	justify-content: space-between;
-	margin: 40px 3.75%;
-	
-    border-radius: 5px;
-
-	background-color: rgba(75, 134, 197, 0.89);
-	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-footer div {
-	width: 33%;
+	margin: 40px 0;
 }
 
 footer h3 {
-	padding: 40px 0 25px;
+	padding: 0 0 25px;
 
 	font-size: 27.5px;
-	color: rgb(212, 213, 255);
+	color: #fefff4;
+}
+
+
+.footer div {
+	height: 200px;
+	text-align: center;
 }
 
 .footer p {
 	font-size: 16.5px;
 	font-weight: 300;
 	line-height: 1.4em;
-	color: rgb(255, 255, 255);
+	color: #fefff4;
 	font-family: 'Roboto Slab', serif;
 }
 
-.footer-fondamentale {
-	margin-left: 4.5%;
-	text-align: left;
+.petite-ecole-contact, .ecole-secondaire-contact, .ecole-internat-contact {
+	width: 100%;
+}
+
+.petite-ecole-contact {
+	padding-left: 0%;
+}
+
+.petite-ecole-contact :last-child {
+	padding: 20px 0;
+}
+
+.ecole-secondaire-contact :last-child {
+	padding: 20px 0;
+}
+
+.ecole-secondaire-contact :last-child a {
+	padding: 0;
+}
+
+.ecole-internat-contact {
+	padding-right: 0%;
+}
+
+.ecole-internat-contact :last-child {
+	padding: 20px 0;
 }
 
 
-.footer-fondamentale :nth-child(2) {
-	margin: 0 0 20px;
-}
-
-.footer-fondamentale :nth-child(3) {
-	margin: 0 0 20px;
-}
-
-.footer-secondaire {
-	text-align: center;
-}
-
-.footer-secondaire :nth-child(2) {
-	margin: 0 0 15px;
-}
-
-.footer-secondaire :nth-child(3) {
-	margin: 0 0 20px;
-}
 
 
-.footer-internat  {
-    margin-right: 4.5%;
-	text-align: right;
-}
+/* mailto lien */
 
-.footer-internat :nth-child(2) {
-	margin-bottom: 20px;
-}
-
-.footer-internat :nth-child(3) {
-	margin: 0 0 20px;
-}
-
-.footer-secondaire a {
-	background: linear-gradient(to top, rgba(245, 35, 52, 1) 0%,  rgba(245, 35, 52, 1) 5%, transparent 5.01%);
+.ecole-secondaire-contact a {
+	background: linear-gradient(to top, rgba(255, 78, 78, 1) 0%,  rgba(255, 78, 78, 1) 5%, transparent 5.01%);
 	background-size: 0% 100%;
 	background-repeat: no-repeat;
 
@@ -367,21 +212,18 @@ footer h3 {
 	transition: background-size ease 0.3s;
 }
 
-.footer-secondaire a:hover{
+.ecole-secondaire-contact a:hover{
 	background-size: 100% 100%;
 }
 
-
-
-
-/* =========================================  Téléphone  ========================  */
+ /* =============================  Téléphone  ============================== */ 
 
 
 
 
 @media screen and (max-width: 1150px) {
 
-	/* ===============  header ================ */
+/*	===============  header ================ */
 	
 	.header{
 		flex-flow: column ;
@@ -389,89 +231,46 @@ footer h3 {
 		align-items: center;
 	}	
 	
-	.nav {
+	.navbar {
 		width: 100%;
-		
 	}
 
-    .nav-h1 {
-		font-size:30px;
+    .navbar-h1 {
+		font-size:40px;
 	}
 
-	.nav-h1 span {
-		font-size: 30px;
+	.navbar-h1 span {
+		font-size: 43.5px;
 	}
 
-	/* ===================  main ================*/
+	/* ===================  main ================ */
 	
-    .main {
-		flex-flow: column nowrap;
-		align-items: center;
+	
+	.main {
+		width: 100%;
+		height: 82%;
+		flex-flow: column;
+		justify-content: space-between;
+		align-items:center ;
+		background: none;
 	}
 
-	.main > div {
-		width: 65%;
-		background-position: 0px 200px;
-	}
-
-
-    .main-fondamental .image {
-		background-position: 0px -175px;
-		
-	}
-
-	.main-secondaire .image {
-		background-position: 0px -120px;
-		
-	}
-
-	.main-internat .image {
-		background-position: 0px -200px;
-		
-	}
-
-	.footer {
-		display: none;
-	}
-
-	.display-none {
-		display: block;
-		position: relative;
-		
+	.main > div{
+		flex-flow: column;
 		text-align: center;
 	}
 
-	.display-none a {
-		font-weight: 400;
+	.main .display-none {
+		display: block;
 	}
-
-	.footer-fondamentale {
-		margin: 0;
-	}
-
-	.footer-internat {
-		margin: 0 0 20px;
-	}
-
-	.main h3 {
-		padding: 25px 0 18.5px;
-	}
-
+	
+	
 	
 
+   	/* ===== FOOTER ====== */
 
-    .display-none::after {
-		content: "";
-		position: absolute;
-		top: 100%;
-		left: 7.5%;
-		width: 85%;
-		height: 2px;
-
-		background-color: black;
+	.footer {
+	display: none;
 	}
-
-	
-
-
 }
+
