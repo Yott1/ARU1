@@ -24,7 +24,7 @@ html{
 
 
 body{
-	background-color:#016573;
+	background-color:#07707e;
 	width: 100%;
 	height: 100vh;
 }
@@ -63,7 +63,6 @@ body{
 	background-color:#fefff6;
 
 	font-size: 50px;
-	font-weight: 400;
 	text-transform: uppercase;
 	
 	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
@@ -85,7 +84,7 @@ body{
 
 .main{
 	justify-content: space-between;
-	height: 55%;
+	height: 50%;
 	width: 100%;
 
 	background-image: url(img/595349517_2000px-600px.png);
@@ -151,7 +150,7 @@ footer h3 {
 	padding: 0 0 25px;
 
 	font-size: 27.5px;
-	color: #fefff4;
+	color: #fefff6;
 }
 
 
@@ -164,7 +163,7 @@ footer h3 {
 	font-size: 16.5px;
 	font-weight: 300;
 	line-height: 1.4em;
-	color: #fefff4;
+	color: #fefff6;
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -226,47 +225,64 @@ footer h3 {
 /*	===============  header ================ */
 	
 	.header{
-		flex-flow: column ;
-		justify-content: center;
+		display: flex;
 		align-items: center;
+		justify-content: center;
+		flex-flow: column nowrap;
 	}	
 	
 	.navbar {
-		width: 100%;
+	width: 100%;
 	}
 
     .navbar-h1 {
 		font-size:40px;
 	}
 
-	.navbar-h1 span {
-		font-size: 43.5px;
-	}
+	
 
 	/* ===================  main ================ */
 	
-	
-	.main {
-		width: 100%;
-		height: 82%;
+	.main .display-none {
+		display: block;
+		color: #fefff6;
+	}
+
+	.main{
+		min-height: calc(100% - 380px);
 		flex-flow: column;
 		justify-content: space-between;
-		align-items:center ;
+
 		background: none;
 	}
 
-	.main > div{
+	.main > div {
+		display: flex;
 		flex-flow: column;
+		flex-basis: 33.33%;
 		text-align: center;
+		margin: 30px 0 0;
 	}
 
-	.main .display-none {
-		display: block;
+	.main h3 {
+		padding: 25px 0;
+		font-size: 35px;
+	}
+
+
+	.main p {
+		font-size: 27.5px;
+		line-height: 1.3em;
+	}
+
+	.main .btn {
+	font-size: 40px;
+	}
+
+	.ecole-secondaire-contact a {
+		font-size: 27.5px;
 	}
 	
-	
-	
-
    	/* ===== FOOTER ====== */
 
 	.footer {
